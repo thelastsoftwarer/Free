@@ -1,0 +1,81 @@
+import java.util.Scanner;
+public class ucakfiyatıhesap {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+	 //0-12 yaşa yüzde 50 indirim
+		//12-24 yaş arası yüzde 10 indirim
+		//65 yaş üzeri yüzde 30 indirim
+		//gidiş dönüş biletine yüzde 20 indirim
+		//km başı 10 kuruş
+		
+		int km,yas,tip,a;
+		double yasindirim1=0.5,tipindirim=0.2,yasindirim2=0.1,yasindirim3=0.3,kmdolar=0.1;
+		double sonfiyat,normalfiyat;
+		
+		System.out.println("lütfen kaç km uçacağınızı seçiniz\n");
+		km=scan.nextInt();
+		 {
+		if(km<250) {
+			System.out.println("üzgünüz bu km çok düşük");
+			return;
+		}
+		}
+		System.out.println("lütfen kaç yaşında olduğunuzu giriniz\n");
+		yas=scan.nextInt();
+		System.out.println("tip seçiniz : (tek yön için 1 gidiş dönüş için 2)\n");
+		tip=scan.nextInt();
+		normalfiyat=(kmdolar*km);
+		
+		
+		
+		if(km>250 && yas>0 && (tip==1 || tip==2)) {
+			
+			System.out.println("tebrikler dogru giriş\n");
+			if(12>=yas && yas>=1 && tip==1) {
+				sonfiyat=(normalfiyat-(normalfiyat*yasindirim1));
+				System.out.println("0-12 yaş indiriminden faydalandız. Ödemeniz gereken tutar: "+sonfiyat+" 'dir");
+				
+				
+			}else if(24>=yas && yas>12 && tip==1) {
+				sonfiyat=(normalfiyat-(normalfiyat*yasindirim2));
+				System.out.println("12-24 yaş indiriminden faydalandız. Ödemeniz gereken tutar: "+sonfiyat+" 'dir");
+					
+				}
+			else if(65<=yas && tip==1) {
+				sonfiyat=(normalfiyat-(normalfiyat*yasindirim3));
+				System.out.println("65 yaş üzeri indiriminden faydalandız. Ödemeniz gereken tutar: "+sonfiyat+" 'dir");
+				
+				
+			}else if(yas>24&&yas<65&&tip==1) {
+				System.out.println("maalesef indirimiz yoktur. Ödemeniz gerekenfiyat "+normalfiyat+" 'dır");
+			}
+			else if(24>=yas && yas>12 && tip==2) {
+				sonfiyat=(normalfiyat-((normalfiyat*yasindirim2)+(normalfiyat*tipindirim)))*2;
+				System.out.println("ödemeniz gereken tutar :"+sonfiyat+" 'dir");
+			
+			}else if(12>=yas && yas>=1 && tip==2) {
+				sonfiyat=(normalfiyat-((normalfiyat*yasindirim1)+(normalfiyat*tipindirim)))*2;
+				System.out.println("ödemeniz gereken tutar :"+sonfiyat+" 'dir");
+			}else if(65<=yas && tip==2) {
+				sonfiyat=(normalfiyat-((normalfiyat*yasindirim3)+(normalfiyat*tipindirim)))*2;
+				System.out.println("ödemeniz gereken tutar :"+sonfiyat+" 'dir");
+				
+			}else if(yas>24&&yas<65&&tip==2) {
+				sonfiyat=2*(normalfiyat-(normalfiyat*tipindirim));
+				System.out.println("ödemeniz gereken tutar: "+sonfiyat+" 'dir");
+			}
+			}else if(km<250) {
+				System.out.println("İstediğiniz km'de uçuş bulunmamaktadır!"); 
+				return;
+				}
+		
+			
+		else {
+			System.out.println("girdiğiniz veriler yanlış!");
+		}
+	 
+
+	}
+
+}
