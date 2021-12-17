@@ -1,0 +1,53 @@
+import java.util.Scanner;
+public class Calculator {
+
+	public static void main(String[] args) {
+		int sayı1,sayı2,secim;
+	Scanner scan=new Scanner(System.in);
+	System.out.println("lütfen bir seçim yapnız");
+	System.out.println("İslemler:\n "
+			+ "1-toplama\n"
+			+ "2-çıkarma\n"
+			+ "3-çarpma\n"
+			+ "4-bölme\n");
+	secim=scan.nextInt();
+	if(secim==1) {
+		System.out.println("lütfen ilk sayıyı giriniz\n");
+		sayı1=scan.nextInt();
+		System.out.println("lütfen ikinci sayıyı giriniz\n");
+		sayı2=scan.nextInt();
+		System.out.println("İşleminizin sonucu "+(sayı1+sayı2)+" 'dir");
+	}else if(secim==2) {
+		System.out.println("lütfen ilk sayıyı giriniz\n");
+		sayı1=scan.nextInt();
+		System.out.println("lütfen ikinci sayıyı giriniz\n");
+        sayı2=scan.nextInt();
+		System.out.println("işleminizin sonucu "+(sayı1-sayı2)+" 'dir");
+	}
+		else if(secim==3) {
+    		System.out.println("lütfen ilk sayıyı giriniz\n");
+    		sayı1=scan.nextInt();
+    		System.out.println("lütfen ikinci sayıyı giriniz\n");
+    		sayı2=scan.nextInt();
+    		System.out.println("işleminiz sonucu "+(sayı1*sayı2)+" 'dir");
+        }
+
+	else if(secim==4) {
+		System.out.println("lütfen ilk sayıyı giriniz\n");
+        sayı1=scan.nextInt();
+		System.out.println("lütfen ikinci sayıyı giriniz\n");
+        sayı2=scan.nextInt();
+        if(sayı2==0) {
+    		System.out.println("ikinci sayıyı tekrar giriniz, işleminiz geçersizdir");
+
+        }
+        else {
+    		System.out.println("İşleminiz sonucu "+(sayı1/sayı2)+" dir");
+
+        }
+        
+	}
+
+	}
+
+}
