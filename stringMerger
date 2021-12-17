@@ -1,0 +1,24 @@
+
+public class stringbirles {
+
+	public static void main(String[] args) {
+	String name="       erkan";
+	//System.out.println(name);
+	String surname="bicer";
+	//System.out.println("hello "+String.format(name +" %s",surname));
+	//System.out.println((name+surname).length());
+	String ozel=new String("erkan");
+	//System.out.println(ozel);
+	//System.out.println(name.charAt(4));
+	String fullname=name+" "+surname+" u are waited by planer, pleaser come here  \n\n         ";
+	//System.out.println(fullname);
+    //System.out.println(fullname.charAt(fullname.length()-5));
+    //System.out.println(fullname.contains("waited  "));	
+    //System.out.println(fullname.indexOf("waited by plane,"));
+    //System.out.println(fullname.indexOf("er",fullname.indexOf("er",fullname.indexOf("er")+1)+1));
+    //System.out.println(fullname.repeat(200));
+    //System.out.println(fullname.substring(fullname.indexOf("er")+1,fullname.indexOf("er",fullname.indexOf("er",fullname.indexOf("er")+1)+1)));
+    System.out.println(fullname.stripLeading());
+	}
+
+}
