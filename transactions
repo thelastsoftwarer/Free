@@ -1,0 +1,34 @@
+package src;
+
+public class islemler implements Runnable {
+	String s;
+	
+
+	public islemler(String s) {
+		this.s = s;
+		System.out.println(s+" islem başladı");
+	}
+
+
+	
+	public void run() {
+		int i;
+		
+			try {
+				for(i=5;i>0;i--) {
+					
+					System.out.print(s+":"+i+" ");
+				Thread.sleep(1000);
+			} }catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.println();
+			System.out.println(s+" islem bitti");
+		}
+
+		
+	}
+	
+
+
