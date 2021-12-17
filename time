@@ -1,0 +1,18 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class zaman {
+
+	public static void main(String[] args) {
+		Date bugün=new Date();
+		System.out.println(bugün);
+		SimpleDateFormat saat=new SimpleDateFormat("hh:mm:ss");
+		System.out.println(saat.format(bugün));
+		SimpleDateFormat gün=new SimpleDateFormat("dd/mm/yyyy");
+		System.out.println(gün.format(bugün));
+		SimpleDateFormat ay=new SimpleDateFormat("SSSS");
+		System.out.println(ay.format(bugün));
+
+	}
+
+}
