@@ -1,0 +1,24 @@
+
+public class ucgennolustur {
+
+	public static void main(String[] args) {
+		int a,b,c,d;
+		for(a=1;a<43;a+=2) {
+			
+			d=a/2;
+			c=21;
+			while(c>d) {
+				System.out.print(" ");
+				c--;
+			}
+			
+			for(b=a;b>0;b--) {
+				System.out.print("*");
+			}
+			System.out.println();
+			
+		}
+	}
+
+}
+
