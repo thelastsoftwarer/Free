@@ -1,0 +1,22 @@
+package src;
+
+public class Threadss {
+	//Threadler iki işlemi aynı anda yapabilmek gibidir mesela bir yandan dosya indirirken diğer yanda oyun oynayabilmek gibidir
+	//eğer iki islem yapmak istersek ve bunu thread olmadan yaparsak(aşağıdaki run örneği gibi) bilgisayar birini yaparken diğeri duracaktır
+	// lakin thread kullanırsak iki islemi arka planda aynı anda oynatacaktır ve bu sayede biz de farklı farklı işlemleri bir arada yapabileceğiz
+	//sleep fonksiyonu try catch ile birlikte olmalıdır ve de içine girdiğimiz milisaniye kadar bekler. 1 saniye =1000 milisaniye
+
+	public static void main(String[] args) {
+		islemler t=new islemler("ilk");
+		Thread ti=new Thread(t);
+		
+
+		islemler f=new islemler("son");
+		Thread tii=new Thread(f);
+		t.run();
+		f.run();
+		ti.start();
+		tii.start();
+	}
+
+}
