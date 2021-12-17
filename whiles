@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class whiles {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int a=0,b;
+		
+		
+		while(true) {
+			System.out.println("lütfen bir sayı giriniz");
+			
+			b=scan.nextInt();
+			if(b<0) {
+				break;
+				
+			}
+			else if(b%2==1) {
+				a+=b;
+			}
+			
+			
+		}
+		System.out.println(a);
+		
+
+	}
+
+}
