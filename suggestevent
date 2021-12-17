@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class etkinlikonerme {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int sicaklık;
+		System.out.println("lütfen sıcaklık değeriniz giriniz");
+		sicaklık=scan.nextInt();
+		if(10> sicaklık &&sicaklık>=0) {
+			System.out.println("bu havada kafeye gidilebilir");
+			
+			
+		}
+		else if(20>=sicaklık&&sicaklık>=10) {
+			System.out.println("yüzmek için harika bir gün");
+			
+		}else if(30>=sicaklık&&sicaklık>=20) {
+			System.out.println("bu havada menderese gidilir");
+			
+		}else if(30>=sicaklık&&sicaklık>=40) {
+			System.out.println("bu havada soğuk birşeyler içmeye gidilir");
+		}else {
+			System.out.println("bu havada hiçbir yere gidilmez "
+					+ "lütfen sağlığın için evde kal ve uygun hava ortamını yakalamaya çalış");
+		}
+		System.out.println("\nprogramımızı kullandığın için teşekkür ederim");
+		
+
+	}
+
+}
