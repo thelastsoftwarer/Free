@@ -1,0 +1,30 @@
+package src;
+
+public class testtt <M,U> {
+	M o;
+	U u;
+	testtt(M o,U u){
+		
+		this.o=o;
+		this.u=u;
+		
+	}
+	public M getO() {
+		return o;
+	}
+	public void setO(M o) {
+		this.o = o;
+	}
+	public U getU() {
+		return u;
+	}
+	public void setU(U u) {
+		this.u = u;
+	}
+ public void print() {
+	 System.out.println(o+" "+u);
+ }
+
+	
+
+}
