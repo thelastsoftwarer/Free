@@ -1,0 +1,52 @@
+
+public class maashesap {
+	private String name;
+	private double salary;
+	private int hire,workhour;
+	
+
+ maashesap(String name,double salary,int hire,int workhour){
+	this.name=name;
+	this.salary=salary;
+	this.hire=hire;
+	this.workhour=workhour;
+}
+    public double tax() {
+    	if(this.salary>=1000.0) {
+    		return this.salary*0.03;
+    	}else {
+    		return 0.0;
+    	}
+    }
+    	public double bonus() {
+    		if(this.workhour>40) {
+    			return (this.workhour-40)*30;
+    			
+    		}else {
+    			return 0.0;
+    		}
+    		
+    		
+    	}
+    	public double increase() {
+    		if(2021-this.hire<10) {
+    			return this.salary*0.05;
+    		}
+    		else if(2021-this.hire>=10&&2021-this.hire<20) {
+    			return this.salary*0.10;
+    		}
+    			else {
+    				return this.salary*0.15;
+    			}
+    			
+    		}
+    	public void totalsalary(maashesap emp) {
+    		System.out.println("employee's tax is :"+emp.tax());
+    		System.out.println("employee's bonus is :"+emp.bonus());
+    		System.out.println("employee's salary increase is :"+emp.increase());
+    		System.out.println("employee's total salary  is :"+(emp.salary+emp.increase()+emp.bonus()-emp.tax()));
+    		
+    }
+ 
+ 
+}
