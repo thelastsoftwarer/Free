@@ -1,0 +1,31 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class sayıtahmin {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+	int a,b;	
+	Random rand=new Random();
+	int sayı=rand.nextInt(1000);
+	;
+	System.out.println("lütfen bir sayı giriniz");
+	a=scan.nextInt();
+    while(true) {
+    if(a==sayı) {
+    	System.out.println("bingoo,doğru bildiniz");
+    	break;
+    }
+    else if(a<sayı) {
+    	System.out.println("lütfen daha yüksek bir sayı giriniz");
+    	a=scan.nextInt();
+    }
+    else if (a>sayı) {
+    	System.out.println("lütfen daha düşük bir sayı giriniz");
+    	a=scan.nextInt();
+    }
+    }
+    System.out.println("uygulamamızı kullandığınız için teşekkür ederiz kendinize iyi bakın");
+	}
+
+}
