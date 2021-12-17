@@ -1,0 +1,19 @@
+import java.util.List;
+import java.util.ArrayList;
+
+public class Arraylist1 {
+
+	public static <Informatonss> void main(String[] args) {
+		Informationss me=new Informationss();
+		me.Informations("erkan", "bicer");
+		Informationss u=new Informationss();
+		u.Informations("derin", "bicerr");
+		List<Informationss> user= new ArrayList<Informationss>();
+		user.add(me);
+		user.add(u);
+		System.out.println(user.get(1).getfullname());
+		
+		
+	}
+
+}
