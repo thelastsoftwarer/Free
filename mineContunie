@@ -1,0 +1,12 @@
+
+
+public class mayinoyunu {
+
+	public static void main(String[] args) {
+     mayin maya=new mayin(5,5);
+     
+     maya.run();
+   
+	}
+
+}
