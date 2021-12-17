@@ -1,0 +1,19 @@
+package src;
+
+public class genericMethod {
+
+	public static void main(String[] args) {
+		Integer[] arr= {1,2,3,4};
+		char[] arrr= {'e','r','k','a','n'};
+		double[] arrrr= {1.1,2.2,3.3};
+		genericMethod(arr);
+		
+		
+		}
+	public static <E> void genericMethod(E[] ar) {
+		for(E item:ar) {
+			System.out.println(item);
+		}
+
+}
+}
