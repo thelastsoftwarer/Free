@@ -1,0 +1,22 @@
+
+public class stringKısayollar {
+
+	public static void main(String[] args) {
+		char[] isim= {'e','r','k','a','n'};
+		String str=new String(isim);
+		System.out.println(str);
+		String metin="ERKAN BİCER";
+		String metin1=" nasıl GİDİYOR";
+		System.out.println(metin.length());
+		System.out.println(metin.concat(metin1));
+		System.out.println(metin.indexOf('R'));
+		System.out.println(metin.charAt(1));
+		System.out.println(metin.endsWith("CE"));
+		System.out.println(metin.replace("E", "FU"));
+		System.out.println(metin.toLowerCase());
+		System.out.println(metin1.toUpperCase());
+		System.out.println(metin.contains("ERKAsN"));
+
+	}
+
+}
