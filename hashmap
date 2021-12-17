@@ -1,0 +1,32 @@
+package src;
+
+import java.util.HashMap;
+
+public class HashMapp {
+
+	public static void main(String[] args) {
+		//HashMaplerde sıra bağımsızdır,sonuçlar rastgele çıkar, bir şifreleme sistemi gibi düşünülebilir. Her bir keyin value'si vardır
+		//Hashmapler küçük-büyüktür işaretleri içinde gireceğin verinin tiplerini alır
+		//Hashmapte istediğimiz objeye istediğim değeri atayabilir , silebilir ,ulaşabilir ve değiştirebiliriz
+		HashMap<Integer,String> h=new HashMap<Integer,String>();
+		h.put(1,"erkan" );
+		h.put(2, "furkan");
+		h.put(3, "Serife");
+		h.put(4, "Derin");
+		System.out.println(h.get(2));
+		System.out.println(h.values());
+		System.out.println(h.keySet());
+		System.out.println(h);
+		System.out.println(h.replace(2, "mahmut"));
+		System.out.println(h);
+		System.out.println(h.put(2, "ahmet"));
+		System.out.println(h);
+		h.remove(2);
+		System.out.println(h);
+		
+		System.out.println(h.get(2));
+		
+
+	}
+
+}
