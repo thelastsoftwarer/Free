@@ -1,0 +1,67 @@
+import java.util.Scanner;
+public class Atm {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+     int a,b=1000,c,d,e;
+     int bakiye=1000;
+     System.out.println("merhaba atm'mize hoşgeldiniz");
+     System.out.println("lütfen yapmak istediğiniz işlemi seçin");
+     while(b>0) {
+    	 System.out.println("1-para yatırma");
+    	 System.out.println("2-para çekme");
+    	 System.out.println("3-fatura öde");
+    	 System.out.println("4-bakiye sorgula");
+    	 System.out.println("5-çıkış yap");
+    	 a=scan.nextInt();
+    	 if(a==1) {
+    		 System.out.println("lütfen paranızı ekranda  gösterildiği gibi yerleştiriniz ve kaç lira "
+    		 		+ "girdiğinizi tuşlayınız");
+    		 c=scan.nextInt();
+    		 bakiye=bakiye+c;
+    		 System.out.println("paranız sayılıyor lütfen bekleyiniz");
+    		 System.out.println("para yükleme işleminiz gerçekleşti");
+    		 System.out.println("mevcut bakiyeniz:"+bakiye);
+    		 
+    	 }else if(a==2) {
+    		 System.out.println("lütfen kaç lira çekmek istediğiniz tuşlayınız");
+    		 d=scan.nextInt();
+    		 
+    		 if(d>bakiye) {
+    			 System.out.println("üzgünüz bu kadar paranız yok");
+    			 
+    		 }
+    		 else {
+    			 bakiye=bakiye-d;
+    			 System.out.println("para çekme işlemi başarıyla gerçekleşti.Bakiyeniz:"+bakiye);
+    		 }
+    	 }
+    	 else if(a==3) {
+    		 System.out.println("kaç lira fatura ödeyeceksiniz tuşlayın");
+    		 e=scan.nextInt();
+    		 if(e>bakiye) {
+    			System.out.println("üzgünüz bu faturayı ödemek için bakiyeniz yok");
+    		 }else {
+    			 System.out.println("tebrikler fatura yatırma işleminiz başarıyla gerçekleşti");
+    			 bakiye=bakiye-e;
+    			 System.out.println(" kalan bakiyeniz:"+bakiye);
+    				
+    			}
+    		 }
+    	 else if(a==4) {
+    		 System.out.println("bakiyeniz:"+bakiye+" tl dir");
+    		
+    	 }else if(a==5) {
+    		 System.out.println("çıkış yapılıyor lütfen bekleyiniz");
+    		 System.out.println("çıkış işleminiz gerçekleşti");
+    		 break;
+    	 }
+    	
+    		
+    
+    	 
+     }
+     System.out.println("hoşçakalın yine bekleriz");
+	}
+
+}
