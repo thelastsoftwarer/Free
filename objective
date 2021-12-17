@@ -1,0 +1,40 @@
+    import java.util.Scanner;
+public class nesnesel {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        // sınıfadı objeadi=new sınıfadı
+		int e,f;
+		Scanner scan=new Scanner(System.in);
+		System.out.println("lütfen ilk sayıyı seçin");
+		e=scan.nextInt();
+		System.out.println("lütfen ikinci sayıyı seçin");
+		f=scan.nextInt();
+		
+		hesapmakinesi makine1=new hesapmakinesi(e,f);
+		int a,b,c,d,h;
+		
+		System.out.println(makine1.sayi1);
+		System.out.println("hangi işlemi yapacağınızı seçiniz:"
+				+ "1-toplama"
+				+ "2-çıkarma"
+				+ "3-carpma"
+				+ "4-bölme");
+		h=scan.nextInt();
+		if(h==3) {
+		a=makine1.carpma();
+		System.out.println(a);
+		}else if(h==1) {
+		b=makine1.toplama();
+		System.out.println(b);
+		}
+		else if(h==2) {
+			c=makine1.cıkarma();
+			System.out.println(c);
+		}else if(h==4) {
+			d=makine1.bölme();
+			System.out.println(d);
+		}
+	}
+
+}
