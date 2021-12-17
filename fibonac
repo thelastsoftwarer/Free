@@ -1,0 +1,16 @@
+
+public class fibonac {
+
+	public static void main(String[] args) {
+		int a,b,c;
+		for(a=9;0<=a;a--) {
+			for(b=a;0<=b;b--) {
+				System.out.print(b+" ");
+			}
+			System.out.println();
+			
+		}
+		
+
+}
+}
