@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class isnumberpalindrom {
+	static void palindrom(int a) {
+		int kalan,terssayi=0;
+	
+		int  gecici=a;
+		while(gecici!=0) {
+			kalan=gecici%10;
+			terssayi=terssayi*10+kalan;
+			gecici=gecici/10;
+		}
+		if(a==terssayi) {
+			System.out.println("itspalindrom");
+		}
+		else {
+			System.out.println("itsnotpalindrom");
+		}
+	}
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		
+		int c,d;
+		while(true) {
+			
+			System.out.println("please enter a number for checking palindrom number ");
+			c=scan.nextInt();
+			if(c==0) {
+				return;
+			}else {
+			palindrom(c);
+			}
+		}
+		
+
+	}
+
+}
