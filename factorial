@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class faköriyel {
+
+	public static void main(String[] args) {
+	Scanner scan=new Scanner(System.in);
+	int a;
+	int b;
+	int c=1;
+	System.out.println("lütfen faktöriyelini almak istediğin sayıyı gir");
+	b=scan.nextInt();
+	for(a=1;a<=b;a++) {
+		if(b<0) {
+			System.out.println("üzgünüz girdiğiniz değerin faktöriyeli yoktur");
+		}
+		else if(b==0){
+			System.out.println("0!=1");
+		}
+		else {
+			
+			c=c*a;	
+		}
+		
+	
+	}
+	System.out.println(b+"! ="+c);
+
+	}
+
+}
