@@ -1,0 +1,23 @@
+
+public class armStrong {
+
+	public static void main(String[] args) {
+		// 153=1.1.1+5.5.5+3.3.3=153
+      int a,bir,on,yüz,gec;
+      for(a=100;a<=999;a++) {
+    	  gec=a;
+    	  bir=gec%10;
+    	  gec/=10;
+    	  on=gec%10;
+    	  gec/=10;
+    	  yüz=gec%10;
+    	  if((bir*bir*bir)+(on*on*on)+(yüz*yüz*yüz)==a) {
+    		  System.out.println(a+" bir armstrong sayıdır");
+    	  }
+    	  
+    	  
+      }
+
+	}
+
+}
