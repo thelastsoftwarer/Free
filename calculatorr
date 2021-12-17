@@ -1,0 +1,32 @@
+
+public class hesapmakinesi {
+	public int sayi1;
+	public int sayi2;
+	hesapmakinesi(int sayi1,int sayi2){
+		this.sayi1=sayi1;
+		this.sayi2=sayi2;
+		//this metodu ile bu şekilde yukarıdaki sayılara asıl programda girdiğimz değerleri atamaktır,
+		//bu fonksiyonun asıl işlevi girdiğimiz değerleri en yukarıdaki değerlere atayıp;
+		//yazacağımız her fonskiyonda bu değerleri kullanabilmektir,
+		//ayrıca bu yolla istediğimiz sayıya istediğimiz değeri atayabiliriz
+		
+	}
+	public int toplama() {
+		return this.sayi1+this.sayi2;
+	}
+	public int cıkarma() {
+		return this.sayi1-this.sayi2;
+		
+	}public int carpma() {
+		return this.sayi1*this.sayi2;
+	}
+	public int bölme() {
+		if(this.sayi2==0) {
+			System.out.println("geçersiz işlem");
+			return 0;		}else {
+			return this.sayi1/this.sayi2;
+		}
+	}
+	
+
+}
