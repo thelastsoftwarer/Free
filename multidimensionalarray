@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class cokboyutArray {
+
+	public static void main(String[] args) {
+		int a,b,c,i,j;
+		Scanner scan=new Scanner(System.in);
+		int[][] liste=new int[5][3]; {
+			for(i=0;i<5;i++) {
+				for(j=0;j<3;j++) {
+					System.out.println("please enter to " +  "number of array");
+					liste[i][j]=scan.nextInt();
+				}
+				
+			}
+			for(int[] sütun:liste) {
+				for(int value :sütun) {
+					System.out.print(value+" ");
+				}
+				System.out.println("\n");
+			}
+			
+			
+		};
+
+	}
+
+}
