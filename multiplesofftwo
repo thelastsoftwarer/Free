@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class ikininkatlarıbul {
+
+	public static void main(String[] args) {
+	Scanner scan=new Scanner(System.in);
+	int a=0;
+	int b,c,d;
+	System.out.println("lütfen bir sayı giriniz");
+	b=scan.nextInt();
+	while(a<b) {
+	
+		if(a%2==0) {
+			c=1;
+		}
+		else {
+			c=0;
+		}
+		if(c==1) {
+			System.out.println(a+" 2'nin katıdır");
+		}
+		a++;
+	
+	}
+
+	}
+
+}
