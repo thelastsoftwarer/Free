@@ -1,0 +1,28 @@
+public class adresarray {
+
+	public static void main(String[] args) {
+		int a,b,c;
+		int[] grades= {1,3,10,2};
+		int[] students= {5,7,1,19};
+		int[] id= {20,15,10,5};
+		System.out.println(Arrays.toString(grades));
+		Arrays.parallelSort(grades);
+		System.out.println(Arrays.toString(grades));
+		Arrays.sort(students);
+		System.out.println(Arrays.toString(students));
+		for(a=0;a<id.length;a++) {
+			for(b=0;b<id.length-1;b++) {
+				if(id[b]>id[b+1]) {
+					c=id[b];
+					id[b]=id[b+1];
+					id[b+1]=c;
+				}
+			}
+		}
+		
+    for(a=0;a<id.length;a++) {
+    	System.out.print(id[a]+" ");
+    }
+	}
+
+}
