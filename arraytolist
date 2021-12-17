@@ -1,0 +1,28 @@
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class arraytolist {
+
+	public static void main(String[] args) {
+		String[] firstnames= {"erkan","furkan","ahmet","mehmet"};
+		String[] lastnames= {"bicer","bicerr","dursun","vursun"};
+		List<Informationss> user=new ArrayList<Informationss>();
+		for(int i=0;i<firstnames.length;i++) {
+			Informationss u=new Informationss();
+			u.Informations(firstnames[i], lastnames[i]);
+			user.add(u);
+			
+		}
+		for(Informationss u:user) {
+		System.out.println(u.getfullname());
+	}
+	  arraytolist g=new arraytolist();
+	  g.printuser(user.get(0));
+		
+	}
+	public void printuser(Informationss u) {
+		System.out.println(u.getfullname());
+	}
+
+}
