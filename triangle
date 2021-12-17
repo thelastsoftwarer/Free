@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class ucgennn {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int a,b,c,kenar;
+		System.out.println("kaç kenarlı olsun");
+		kenar=scan.nextInt();
+		for(a=0;a<kenar;a++) {
+			for(b=0;b<=kenar-a-1;b++) {
+				System.out.print(" ");
+			}
+			for(c=0;c<2*a+1;c++) {
+				System.out.print("*");
+			}
+			System.out.print(" \n");
+		}
+
+	}
+
+}
