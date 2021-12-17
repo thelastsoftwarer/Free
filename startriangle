@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Yıldızücgeni {
+
+	public static void main(String[] args) {
+	int a,b,c,d,e;
+	System.out.println("lütfen kaç kenarlı üçgen olacağını yaz");
+	Scanner scan=new Scanner(System.in);
+	a=scan.nextInt();
+	d=a;
+     for(c=0;c<a;c++) {
+    	  
+    	 for(b=0;b<a-c-1;a--) {
+    		 System.out.print(" ");
+    
+    	 }
+    	 for(e=d;e<=a;e--) {
+    		 System.out.print("*");
+    		 if(e==0) {
+            break;
+    		 }
+    	 }
+    		 System.out.println("\n");
+    	 }
+     }
+
+	}
+
+
