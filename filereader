@@ -1,0 +1,22 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class filereader {
+
+	public static void main(String[] args) throws IOException {
+		File kitap=new File("/temp/captmidn.txt");
+		Scanner scan=new Scanner(kitap);
+		String filecontent="this is made by me xD";
+		while(scan.hasNextLine()) {
+		System.out.println(scan.nextLine());
+		filecontent=filecontent.concat(scan.nextLine()+"\n");
+		}
+		FileWriter writer=new FileWriter("/temp/captmidn.txt");
+		writer.write(filecontent);
+		writer.close();
+	}
+
+}
