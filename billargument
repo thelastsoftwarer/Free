@@ -1,0 +1,30 @@
+
+public class faturaarguman {
+ public static double kwtl=0.767;
+ public static double trt=6.61;
+ double kdv;
+ int sonkw;
+ int ilkkw;
+ 
+
+ faturaarguman(int ilkkw,int sonkw){
+	 this.ilkkw=ilkkw;
+	 this.sonkw=sonkw;
+	 
+	 
+	
+}
+ public double kdvdondur() {
+	 return ((sonkw-ilkkw)*kwtl)*18/100;
+ }
+ public double trtdondur() {
+	 return trt*115/100;
+ }
+ public double kwdondur() {
+	 return (sonkw-ilkkw)*kwtl;
+	 
+ }public double run() {
+	 return kwdondur()+trtdondur()+kdvdondur();
+ }
+ 
+}
