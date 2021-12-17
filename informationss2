@@ -1,0 +1,13 @@
+public class Informationss {
+		String firstname;
+		String lastname;
+		public void Informations(String firstname,String lastname) {
+			this.firstname=firstname;
+			this.lastname=lastname;
+		}
+		public String getfullname() {
+			return firstname+" "+lastname;
+		}
+		
+
+	}
