@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class teams {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner scan=new Scanner(System.in);
+		int[] notlar=new int[3];
+		for(int i=0;i<notlar.length;i++) {
+			System.out.println(i+1+". öğrenci için bir not giriniz");
+			notlar[i]=scan.nextInt();
+		}
+		
+		veri a=new veri("erkan",101,notlar[0]);
+		veri b=new veri("derin",102,notlar[1]);
+		veri c=new veri("fırat",103,notlar[2]);
+		
+		a.exit();
+		System.out.println("şuan ki kişi sayısı:"+veri.howmanypeop());
+		
+		
+		
+		System.out.println(veri.overall(notlar));
+	}
+}
