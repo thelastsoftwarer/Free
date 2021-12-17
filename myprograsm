@@ -1,0 +1,18 @@
+
+import java.util.Scanner;
+public class Myprograssm {
+public static void main(String[] args) {
+Scanner input=new Scanner (System.in);
+int a,b;
+double c;
+System.out.println("Lütfen bilgisayara sayı giriniz: ");
+a=input.nextInt();
+System.out.println("lütfen ikinci sayınızı giriniz");
+b=input.nextInt();
+System.out.println("Lütfen bilgisayara sayı giriniz: "+a);
+System.out.println("Lütfen bilgisayara sayı giriniz: "+b);
+c=a+b;
+System.out.println("ur calculated number is : "+c);
+	}
+}
+
