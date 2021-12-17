@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class faturaaa {
+
+	public static void main(String[] args) {
+	
+	int sonkw,ilkkw;
+	double fatura;
+	
+	Scanner scan=new Scanner(System.in);
+	
+	System.out.println("please enter to last kw");
+	sonkw=scan.nextInt();
+	faturaarguman f1=new faturaarguman(14515,sonkw);
+	f1.run();
+	fatura=f1.run();
+	System.out.println(fatura);
+	
+
+	}
+
+}
