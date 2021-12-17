@@ -1,0 +1,30 @@
+package src;
+
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.TreeMap;
+
+public class arraylistt {
+
+	public static void main(String[] args) {
+		ArrayList<String> a=new ArrayList<>();
+		a.add("maho");
+		a.add("eko");
+		a.add("furko");
+		
+		System.out.println(a);
+		TreeMap<Integer,String> s1=new TreeMap<>();
+		s1.put(2,"erkoo");
+		s1.put(3,"furkoo");
+		s1.put(1,"Mahoo");
+		s1.pollLastEntry();
+		System.out.println(s1);
+		Test<Integer> t=new Test<>(15);
+		System.out.println(t.getObj());
+		testtt<Integer,String> t2=new testtt<Integer,String>(1, "erkan");
+		t2.print();
+		
+	}
+	}
+
+
