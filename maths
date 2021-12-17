@@ -1,0 +1,19 @@
+
+public class mathler {
+
+	public static void main(String[] args) {
+
+     System.out.println(Math.ceil(2.1));
+     System.out.println(Math.round(1.49));
+     System.out.println(Math.random());
+     System.out.println(Math.max(5, 30));
+     System.out.println(Math.PI);
+     System.out.println(Math.abs(-5));
+     System.out.println(Math.abs(5));
+     System.out.println(Math.cos(60.0));
+     System.out.println(Math.sqrt(9));
+     System.out.println(Math.pow(10, 3));
+
+	}
+
+}
