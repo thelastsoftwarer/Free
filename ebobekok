@@ -1,0 +1,52 @@
+import java.util.Scanner;
+public class ebobekok {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int sayi,sayi2,a,b,c,d,e = 0,f,g=0,h,i;
+		System.out.println("ebob ekok yapacağınız rakamları seçiniz");
+		sayi=scan.nextInt();
+		System.out.println("ebob ekok yapacağınız rakamları seçiniz");
+        sayi2=scan.nextInt();
+        int min=(sayi<sayi2)?sayi:sayi2;
+        int max=(sayi>sayi2)?sayi:sayi2;
+         a=min-1;
+        for(b=a;b>0;b--) {
+        	if(max%min==0) {
+        		e=min;
+        		break;
+        	}
+        	else if(min%b==0) {
+        		if(max%b==0) {
+        			e=b;
+        			break;
+        		}
+        	
+   
+        		}
+        		
+        	}
+        if(e!=min&&e!=b) {
+        	e=1;
+        }
+        	
+        	
+        
+        for(f=1;f>0;f++) {
+         if(max%min==0) {
+        	 g=max;
+        	 break;
+         }else if((max*f)%min==0) {
+        	 g=max*f;
+        	 break;
+         }
+         
+         }
+        System.out.println("ebob:"+e+", ekok:"+g);
+        }
+      
+		
+	}
+       
+
+
