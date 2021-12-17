@@ -1,0 +1,19 @@
+package src;
+
+import java.util.Iterator;
+import java.util.PriorityQueue;
+
+public class priorityqueque {
+
+	public static void main(String[] args) {
+		PriorityQueue q=new PriorityQueue();
+		q.add("erkan");
+		q.add("ahmet");
+		Iterator itr=q.iterator();
+		while(!q.isEmpty()) {
+			System.out.println(q.poll());
+		}
+		
+	}
+
+}
