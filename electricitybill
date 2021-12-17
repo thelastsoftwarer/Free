@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class elektrikfatura {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int kw,ilkkw;
+		double vergi,trt,fatura,kdv;
+		System.out.println("lütfen şuanki kw değerini giriniz");
+		kw=scan.nextInt();
+		ilkkw=13985;
+		trt=(4.29*115)/100;
+		vergi=(2.32*115)/100;
+		kdv=((kw-ilkkw)*0.767)*18/100;
+		fatura=((kw-ilkkw)*0.767)+trt+vergi+kdv;
+		System.out.println(fatura);
+		
+		
+
+	}
+
+}
