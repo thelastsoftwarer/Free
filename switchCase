@@ -1,0 +1,80 @@
+import java.util.Scanner;
+public class switchCase {
+
+	public static void main(String[] args) {
+	Scanner scan=new Scanner(System.in);
+	int cekme,yatırma,odeme;
+	int bakiye=1000;
+	int  cevirme;
+	int secim;
+	System.out.println("Lütfen bir işlem seçiniz . İşlemler : \n1-Para Çekme\n"
+			+ "2-Para Yatırma\n"
+			+ "3-Döviz İşlemleri\n"
+			+ "4-Bakiye Sorgula\n"
+			+ "5-Kart iade");
+		
+			
+    int islem=scan.nextInt();
+    switch(islem) {
+    case 1:
+    	System.out.println("Kaç lira çekmek istiyorsunuz");
+    	cekme = scan.nextInt();
+    	if(bakiye>=cekme){
+    	System.out.println("Paranız Veriliyor lütfen bekleyiniz\n"
+    			+ "para çekme işleminiz gerçekleşti\n"
+    			+ "kalan bakiye: "+(bakiye-cekme));
+    	
+    	}
+    	else {
+    		System.out.println("\nParanızın bakiyesi istenilen tutardan düşüktür lütfen başka bir tutar giriniz");
+    	}
+    	break;
+    	
+    case 2:
+    	System.out.println("kaç lira yatırmak istiyorsunuz\n");
+    	yatırma=scan.nextInt();
+    			
+    	System.out.println("Para çekme işleminiz gerçekleştiriliyor lütfen bekleyiniz.\n"
+    			+ "Para Yatırma işleminiz gerçekleşti\n");
+    	System.out.println("Güncel Bakiyeniz: "+(bakiye+yatırma));
+    	break;
+    case 3:
+    	System.out.println("\ndoları lira yapmak için 1 lirayı dolar yapmak için 2 tuşuna basınız\n");
+    	secim=scan.nextInt();
+    	System.out.println("kaç doları lira yapmak veya lirayı dolar yapmak istiyorunuz");
+
+    	cevirme=scan.nextInt();
+    	if(secim==1) {
+		System.out.println("Lütfen paranızı yatırınız\n");
+		System.out.println("paranız yatırılıyor lütfen bekleyiniz");
+    	System.out.println((cevirme*8.5)+" liranız hesabınız gönderilmiştir");
+
+		
+    	}
+    	else {
+    		System.out.println(cevirme+" liranız " +(cevirme*0.12) +"dolara dönüsmüstür");
+        	break;
+    	}
+
+    	
+    case 4:
+    	System.out.println("bakiyeniz "+bakiye+" liradir");
+    	break;
+    case 5:
+    	System.out.println("kartınız iade edilmiştir");
+    	break;
+    	
+    	default:
+    		System.out.println("bilinmeyen hata, lütfen kartınızı alınız");
+    		break;
+    	
+    	
+
+    	
+    }
+    
+   
+
+	}
+
+}
