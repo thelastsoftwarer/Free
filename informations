@@ -1,0 +1,55 @@
+
+
+public class bilgiler {
+	String kitapadı;
+	String yazar;
+	String yayınevi;
+	private int  sayfa;
+	public void bilgiler(String kitapadı,int sayfa,String yazar,String yayınevi) {
+		this.kitapadı=kitapadı;
+		this.yayınevi=yayınevi;
+		this.yazar=yazar;
+		if(sayfa<0) {
+			System.out.println("böyle bir sayfa sayısı olamaaz");
+			sayfa=1;
+			this.sayfa=sayfa;
+		}else {
+		this.sayfa=sayfa;
+		}
+				
+	}
+	public int getSayfa() {
+		return this.sayfa;
+	}
+public void setSayfa(int a) {
+	if(a<0) {
+		System.out.println("bu sayfa sayısı girilemez");
+		this.sayfa=1;
+	}else {
+		this.sayfa=a;
+	}
+		
+		
+	}
+public String getKitapadı() {
+	return kitapadı;
+}
+public void setKitapadı(String kitapadı) {
+	this.kitapadı = kitapadı;
+}
+public String getYazar() {
+	return yazar;
+}
+public void setYazar(String yazar) {
+	this.yazar = yazar;
+}
+public String getYayınevi() {
+	return yayınevi;
+}
+public void setYayınevi(String yayınevi) {
+	this.yayınevi = yayınevi;
+}
+	
+	
+
+}
