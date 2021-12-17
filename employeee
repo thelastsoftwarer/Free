@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class employee {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int b,c;
+		double a;
+		System.out.println("please enter to employee's salary ");
+		a=scan.nextDouble();
+		System.out.println("please enter to employee's starting to job");
+		b=scan.nextInt();
+		System.out.println("please enter to employee's workhour");
+		c=scan.nextInt();
+		maashesap emp1=new maashesap("erkan",a,b,c);
+		emp1.totalsalary(emp1);
+
+	}
+
+}
