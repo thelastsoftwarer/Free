@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+
+public class ArrrayyList {
+
+	public static void main(String[] args) {
+		List<Integer> grades= new ArrayList<Integer>();
+		 grades.add(10);
+         grades.add(5);
+         grades.add(2);
+         grades.set(0, 3);
+         grades.add(0,5);
+         for(int a=0;a<4;a++) {  
+        	 System.out.println(grades.get(a));
+         }
+     System.out.println(grades.indexOf(0));
+     while(!grades.isEmpty()) {
+    	 System.out.println(grades.remove(0));
+     }
+     grades.add(5);
+    System.out.println(grades.get(0));
+    List<Integer> grady =Arrays.asList(1,2,5,7);
+	System.out.println(Arrays.toString(grady.toArray()));
+	}  
+	
+
+}
