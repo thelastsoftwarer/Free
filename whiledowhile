@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class whiledowhile {
+
+	public static void main(String[] args) {
+	int a,b,c,flag=0,sayı=0;
+	Scanner scan=new Scanner(System.in);
+	System.out.println("lütfen bir  sayı giriniz");
+	b=scan.nextInt();
+	
+	for(a=2;a<=b;a++) {
+		for(c=2;c<a;c++) {
+			if(a%c==0) {
+				sayı=1;
+				break;
+			}
+			else {
+				sayı=0;
+			}
+			
+		}
+		if(sayı==1) {
+			System.out.println(a+" bir asal sayı değildir");
+		}
+		else if(sayı==0) {
+			System.out.println(a+" bir asal sayıdır");
+		}
+		else if(a==1) {
+			System.out.println(a+" bir asal sayı değildir");
+		}
+		else {
+			System.out.println(a+" bir asal sayıdır");
+		}
+	}
+		
+			
+				
+		
+	
+
+	}
+}
+
+
+
