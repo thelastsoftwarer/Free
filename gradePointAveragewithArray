@@ -1,0 +1,25 @@
+		import java.util.Scanner;
+public class notOrtalamaWithArray {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int[] notlar=new int[6];
+		double toplam=0;
+		System.out.println("lütfen notları sırayıla giriniz: "
+				+ "1-Matematik\n"
+				+ "2-Fizik\n"
+				+ "3-Edebiyat\n"
+				+ "4-Tarih\n"
+				+ "5-Kimya\n"
+				+ "6-İngilizce");
+		for(int i=0;i<notlar.length;i++) {
+			notlar[i]=scan.nextInt();
+		}
+         for(int i=0;i<notlar.length;i++) {
+        	 
+        	 toplam+=notlar[i];
+         }
+         System.out.println("Not ortalamanız hesaplanmıştır:"+toplam/notlar.length);
+	}
+
+}
