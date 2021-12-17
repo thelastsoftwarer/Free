@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Sınıfgecmesistemi {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int türkce,fen,sosyal,matematik,ingilizce;
+		double ortalama;
+		System.out.println("Lütfen türkçe notunuzu giriniz \n");
+		türkce=scan.nextInt();
+		System.out.println("Lütfen fen notunuzu giriniz ");
+		fen=scan.nextInt();
+		System.out.println("\nLütfen sosyal notunu giriniz \n");
+		sosyal=scan.nextInt();
+		System.out.println("Lütfen mateamtik notunu giriniz \n");
+		matematik=scan.nextInt();
+		System.out.println("Lütfen ingilizce notunu giriniz \n");
+		ingilizce=scan.nextInt();
+		if(((türkce*0.2)+(matematik*0.3)+(sosyal*0.2)+(fen*0.2)+(ingilizce*0.1))>=60) {
+			System.out.println("tebrikler sınıfı başarıyla geçtiniz \n");
+			System.out.println("not ortalamanız: "+((türkce*0.2)+(matematik*0.3)+(sosyal*0.2)+(fen*0.2)+(ingilizce*0.1))+" 'dir");
+			
+		}else {
+			System.out.println("üzgünüz sınıfta kaldınız \n");
+			System.out.println("not ortalamanız: "+((türkce*0.2)+(matematik*0.3)+(sosyal*0.2)+(fen*0.2)+(ingilizce*0.1))+" 'dir");
+
+		}
+
+	}
+
+}
