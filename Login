@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Loginsistemi {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		String a="erko101hotmail";
+		String par="erkan101";
+		String kullanıcı,parola;
+		System.out.println("lütfen kullanıcı adını giriniz\n");
+		kullanıcı=scan.nextLine();
+		System.out.println("lütfen şifrenizi giriniz\n");
+		parola=scan.nextLine();
+		if(a.equals(kullanıcı) && par.equals(parola) ) {
+			System.out.println("Oturumunuz başarıyla açılmıştır");
+		}else {
+			System.out.println("kullanıcı adı veya şifreniz yanlıştır lütfen tekrar deneyiniz");
+		}
+
+		
+
+	}
+
+}
